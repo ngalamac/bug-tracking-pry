@@ -5,14 +5,11 @@ class MultiplicationTable
     end
   
     def generate
-      (1..@rows).each do |i|
+      (1..@rows). do |i|
         (1..@columns).each do |j|
-          print "#{i * j}\t"
-          # Intentional Bug: Missing newline character '\n' here
-          # This bug will cause all the numbers to be printed on a single line.
-          # It should be corrected by adding '\n' to move to a new line after each row.
+          print "#{i  j}\t"
         end
-        # This line should be removed since we added '\n' after each number print.
+        puts
       end
     end
   end
